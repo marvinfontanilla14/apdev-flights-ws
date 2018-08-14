@@ -16,7 +16,6 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
     </http:request-config>
     <ws:consumer-config name="Delta_Web_Service_Consumer" wsdlLocation="http://mu.mulesoft-training.com/essentials/delta?wsdl" service="TicketServiceService" port="TicketServicePort" serviceAddress="http://mule-worker-training-u.cloudhub.io:8081/essentials/delta" doc:name="Web Service Consumer"/>
     <configuration defaultExceptionStrategy-ref="Choice_Exception_Strategy" doc:name="Configuration">
-    	<http:config useTransportForUris="false"/>
     	<expression-language>
     		<global-functions>
     			def getNumSeats(type){
